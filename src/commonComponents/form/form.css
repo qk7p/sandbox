@@ -1,0 +1,132 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 300px;
+}
+
+.form h1 {
+  font-size: large;
+  margin-bottom: 16px;
+  color: var(--orange);
+}
+
+.form label {
+  font-size: medium;
+  margin-bottom: 4px;
+  margin-top: 16px;
+}
+
+.form .subText {
+  font-size: small;
+  margin-top: 6px;
+  align-self: flex-end;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form input {
+  border: 1px solid var(--box-border);
+  font-family: "Rubik", sans-serif;
+  border-radius: 4px;
+  outline: none;
+  padding: 6px;
+  transition: all ease 0.5s;
+}
+
+.form input:hover {
+  border: 1px solid var(--blue);
+}
+
+.form input:focus-visible {
+  border: 1px solid var(--blue);
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  color: var(--font-gray);
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.form button {
+  margin-top: 24px;
+  height: 40px;
+
+  border-radius: 2px;
+  color: white;
+  font-family: inherit;
+  font-size: large;
+  letter-spacing: 0.1em;
+  outline: none;
+  border: 1px solid var(--dark-green);
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+
+.form button:disabled {
+  background-color: var(--orange);
+  opacity: 0.5;
+  cursor: default;
+}
+
+.form a {
+  display: block;
+  margin-top: 16px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.form .offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.form .hide {
+  display: none;
+}
+
+.form .valid {
+  background-color: var(--success);
+}
+
+.form .invalid {
+  background-color: var(--danger);
+}
+
+.form .error-message {
+  margin-top: 12px;
+  color: red;
+
+}
+
+.form .error-message > svg {
+  margin-right: 0.25rem;
+}
+
+.line {
+  display: inline-block;
+  margin-left: 4px;
+}

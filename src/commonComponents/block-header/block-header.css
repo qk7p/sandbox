@@ -1,0 +1,13 @@
+.blockHeader {
+  font-size: 14px;
+  color: var(--font-gray);
+}
+
+.blockHeader hr {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 1px solid var(--font-gray);
+}
