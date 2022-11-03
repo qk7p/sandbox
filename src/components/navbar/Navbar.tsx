@@ -24,7 +24,10 @@ export function Navbar(props: INavbarProps) {
         </Link>
 
         <Link className="nav-item" to="/login">
-          <img src="">
+      Войти
+        </Link>
+        <Link className="nav-item" to="/register">
+      Регистрация
         </Link>
       </div>
     </nav>
