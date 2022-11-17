@@ -6,12 +6,9 @@ import RegisterPage from "pages/register-page/RegisterPage";
 import LoginPage from "pages/login-page/LoginPage";
 import WelcomePage from "pages/welcome-page/WelcomePage";
 import RequireAuth from "components/require-auth/RequireAuth";
-import { useAuth } from "hooks/useAuth";
+import ResumePage from "pages/resume-page/ResumePage";
 
-function App() {
-
-  const { isAuth } = useAuth();
-
+export const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -19,6 +16,7 @@ function App() {
         <Route path="/" element={<WelcomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/resume" element={<ResumePage />} />
         {/* private */}
         <Route element={<RequireAuth />}>
           <Route path="/nester" element={<Nester />} />
@@ -28,6 +26,4 @@ function App() {
       </Route>
     </Routes>
   );
-}
-
-export default App;
+};

@@ -30,7 +30,8 @@
   flex: 10;
   display: flex;
   justify-content: flex-end;
-  padding-right: 24px;
+  align-items: center;
+  padding-right: 6px;
 }
 .navbar .navigationContainer a {
   color: white;
@@ -40,4 +41,23 @@
 
 .navbar .navigationContainer a:hover {
   color: var(--orange);
+}
+
+.navbar .navigationContainer .profile-icon {
+  cursor: pointer;
+}
+
+.navbar .navigationContainer .profile-icon:hover {
+  opacity: 0.8;
+}
+
+.navbar .navigationContainer .drop-down-holder {
+position: relative;
+}
+
+.navabr .navigationContainer .drop-down-holder .drop-down {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }

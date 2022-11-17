@@ -171,3 +171,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+  color: var(--orange);
+  font-weight: 400;
+}
+
+p {
+  color: var(--font-gray);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+label {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+

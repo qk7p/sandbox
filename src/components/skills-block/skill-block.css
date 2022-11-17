@@ -1,0 +1,27 @@
+.skill-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.skill-block .divider {
+  margin: 4px 0px 10px 0px;
+
+  width: 50px;
+  border: none;
+  border-bottom: 4px solid var(--blue);
+}
+
+.skill-block .item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-block .row {
+  flex-direction: row;
+}
+
+.skill-block .column {
+  flex-direction: column;
+  align-items: flex-start;
+}

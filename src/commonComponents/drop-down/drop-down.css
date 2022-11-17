@@ -1,0 +1,14 @@
+.drop-down {
+  right: -30px;
+  top: 42px;
+  position: absolute;
+  z-index: 101;
+  border-bottom-left-radius: 15px;
+
+}
+
+.drop-down-content-container {
+    padding: 12px;
+    background-color: var(--dark-gray);
+    border-right: 8px solid var(--orange);
+}
